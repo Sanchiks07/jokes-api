@@ -17,7 +17,9 @@ class JokeFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            "type" => $this->faker->sentence(1),
+            "setup" => $this->faker->sentence(6),
+            "punchline" => $this->faker->sentence(3)
         ];
     }
 }
